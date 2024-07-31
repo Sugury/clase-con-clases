@@ -68,18 +68,18 @@ class Edificio {
 
 // no modificar este test
 function testClaseEdificio() {
-  const unPiso = new Piso("planta baja");
+  const unPiso = new Piso("Planta baja");
   const otroPiso = new Piso("primer piso");
   const unEdificio = new Edificio([unPiso, otroPiso]);
   const deptoUno = new Departamento("depto uno");
   const deptoDos = new Departamento("depto dos");
   const deptoTres = new Departamento("depto tres");
-  unEdificio.addDepartamentoToPiso("planta baja", deptoUno);
-  unEdificio.addDepartamentoToPiso("planta baja", deptoDos);
-  unEdificio.addDepartamentoToPiso("planta baja", deptoTres);
+  unEdificio.addDepartamentoToPiso("Planta baja", deptoUno);
+  unEdificio.addDepartamentoToPiso("Planta baja", deptoDos);
+  unEdificio.addDepartamentoToPiso("Planta baja", deptoTres);
 
-  const deptos = unEdificio.getDepartamentosByPiso("planta baja");
-  const deptosEmpty = unEdificio.getDepartamentosByPiso("primer piso");
+  const deptos = unEdificio.getDepartamentosByPiso("Planta baja");
+  const deptosEmpty = unEdificio.getDepartamentosByPiso("Primer piso");
 
   if (
     Array.isArray(deptosEmpty) &&
